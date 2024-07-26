@@ -1,10 +1,13 @@
 import "./App.css";
-import { Linegraph } from "./components/Linegraph";
+import { Component } from "./components/Linegraph";
+// import { Linegraph } from "./components/Linegraph";
+import { Button } from "./components/ui/button";
 
 function App() {
   return (
     <>
-      <Linegraph />
+      <Button>Fuck me </Button>
+      <Component></Component>
     </>
   );
 }

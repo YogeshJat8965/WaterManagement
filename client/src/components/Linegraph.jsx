@@ -122,7 +122,8 @@ const chartConfig = {
     label: "Mobile",
     color: "hsl(var(--chart-2))",
   },
-} satisfies ChartConfig
+}
+//  satisfies ChartConfig
 
 export function Component() {
   const [activeChart, setActiveChart] =

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "client",
   "private": true,
@@ -34,3 +35,5 @@
     "vite": "^5.3.4"
   }
 }
+=======
+>>>>>>> refs/remotes/origin/main

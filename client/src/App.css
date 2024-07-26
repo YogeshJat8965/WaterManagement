@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+.gauge-container {
+  width: 350px; /* Adjust the width */
+  height: 350px; /* Adjust the height */
+  margin: auto; 
+}

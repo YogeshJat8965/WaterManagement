@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello world
+    <button id="startButton">Start Connection</button>
+    <button id="stopButton">Stop Connection</button>
+    <script>
+        let socket;
+
+        function startConnection() {
+            socket = new WebSocket('ws://localhost:3002');
+
+            socket.addEventListener('open', function (event) {
+                socket.send('Hello from client');
+            });
+
+            socket.addEventListener('message', function (event) {
+                console.log('Message from server ', event.data);
+            });
+
+            socket.addEventListener('close', function (event) {
+                console.log('WebSocket connection closed');
+            });
+        }
+
+        document.getElementById('startButton').addEventListener('click', function () {
+            if (!socket || socket.readyState === WebSocket.CLOSED) {
+                startConnection();
+                console.log('WebSocket connection started');
+            } else {
+                console.log('WebSocket connection is already open');
+            }
+        });
+
+        document.getElementById('stopButton').addEventListener('click', function () {
+            if (socket && socket.readyState === WebSocket.OPEN) {
+                socket.close();
+            } else {
+                console.log('WebSocket connection is not open');
+            }
+        });
+    </script>
+</body>
+</html>

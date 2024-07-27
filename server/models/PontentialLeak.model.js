@@ -4,6 +4,7 @@ const potentialLeakSchema = new mongoose.Schema(
     {
         house:{
         type : String,
+        ref : 'House',
 
         },
 

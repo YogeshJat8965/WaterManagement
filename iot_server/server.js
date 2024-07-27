@@ -10,13 +10,15 @@ const wss = new WebSocket.Server({ server });
 wss.on('connection', (ws) => {
   console.log('Client connected to Server 1');
 
-  for (let i = 0; i < 10; i++) {
-    ws.send(`Server 1 received: ${i}`);
-  }
+  // for (let i = 0; i < 10; i++) {
+  //   ws.send(`Server 1 received: ${i}`);
+  // }
 
   ws.on('message', (message) => {
     console.log(`Received message from client: ${message}`);
-    setInterval(function () {ws.send("Server 1 received:")}, 1000);
+    var i = 0;
+    setInterval(function () {ws.send(`Server 1 received:${i}`);
+    i++}, 5000);
   });
 });
 

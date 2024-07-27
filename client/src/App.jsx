@@ -1,4 +1,4 @@
-import { PieCharts} from"./components/ui/PieCharts";
+// import { PieCharts } from "./components/ui/PieCharts";
 import "./App.css";
 // import { Component } from "./components/Linegraph";
 import Navbar from "./components/Navbar/Navbar";
@@ -10,7 +10,6 @@ function App() {
     <>
       <Navbar />
       <Home />
-      <PieCharts></PieCharts>
     </>
   );
 }

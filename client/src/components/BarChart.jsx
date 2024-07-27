@@ -1,4 +1,9 @@
+<<<<<<< Updated upstream
 
+=======
+import React from "react";
+import WebSocketButton from "./ui/websocetbtn";
+>>>>>>> Stashed changes
 import { TrendingUp } from "lucide-react";
 import { useEffect , useState } from "react";
 
@@ -58,6 +63,7 @@ const chartConfig = {
 };
 
 export default function Component() {
+<<<<<<< Updated upstream
   const [chartData, setchart] = useState(chartData1);
 
   useEffect(() => {
@@ -104,6 +110,10 @@ export default function Component() {
     <> 
        <button id="startButton">Start Connection</button>
     <button id="stopButton">Stop Connection</button>
+=======
+  return (<>
+  <WebSocketButton></WebSocketButton>
+>>>>>>> Stashed changes
     <Card>
       <CardHeader>
         <CardTitle>Water Consumption by months</CardTitle>
@@ -166,7 +176,11 @@ export default function Component() {
           Showing total visitors for the last 6 months
         </div>
       </CardFooter>
+<<<<<<< Updated upstream
     </Card>
     </>
+=======
+    </Card></>
+>>>>>>> Stashed changes
   );
 }

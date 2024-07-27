@@ -25,7 +25,7 @@ const chartData = [
   { browser: "educational", visitors: 173, fill: "var(--color-edge)" },
   { browser: "other", visitors: 190, fill: "var(--color-other)" },
 ];
-
+ 
 const chartConfig = {
   visitors: {
     label: "Visitors",

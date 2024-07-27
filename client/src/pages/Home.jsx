@@ -42,7 +42,7 @@ export default function Home() {
           textColor="black"
           // percent={percent} get percent through the api
         ></GaugeChart>
-        <div className="font-black text-2xl ">Water Utilisation Today</div>
+        <div className="font-black text-2xl ">Daily Water Utilization</div>
       </div>
       <div className="col-span-2">
         <WardBarChart></WardBarChart>

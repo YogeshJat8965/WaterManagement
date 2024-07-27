@@ -1,28 +1,11 @@
 import Component from "@/components/BarChart";
-import React, { useEffect, useState } from "react";
 import GaugeChart from "react-gauge-chart";
-import { format, subDays } from "date-fns";
+// import { format, subDays } from "date-fns";
 import { PieCharts } from "../components/ui/PieCharts";
 import LeakageComponent from "@/components/LeakageComponent";
 
-const generateDummyData = () => {
-  const data = [];
-  const today = new Date();
-  for (let i = 0; i < 30; i++) {
-    const date = subDays(today, i);
-    const value = Math.floor(Math.random() * 100); // Generate random water consumption value
-    data.push({ date, value });
-  }
-  return data.reverse(); // To get chronological order
-};
 
 export default function Home() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    const dummyData = generateDummyData();
-    setData(dummyData);
-  }, []);
 
   return (
     <div className="p-5 grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4">

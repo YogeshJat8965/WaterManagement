@@ -3,6 +3,7 @@ import GaugeChart from "react-gauge-chart";
 // import { format, subDays } from "date-fns";
 import { PieCharts } from "../components/ui/PieCharts";
 import LeakageComponent from "@/components/LeakageComponent";
+import WardBarChart from "@/components/ui/WardBarChart";
 
 
 export default function Home() {
@@ -15,6 +16,8 @@ export default function Home() {
 
       <LeakageComponent />
 
+      <PieCharts></PieCharts>
+
       <div className="flex flex-col gap-4 justify-center items-center p-4 border rounded-lg shadow-md">
         <GaugeChart
           className="w-24"
@@ -24,7 +27,9 @@ export default function Home() {
         ></GaugeChart>
         <div className="font-black text-2xl ">Water Utilisation Today</div>
       </div>
-      <PieCharts></PieCharts>
+      <div className="col-span-2">
+        <WardBarChart></WardBarChart>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,3 @@
-
 const express = require('express');
 const http = require('http');
 const WebSocket = require('ws');
@@ -8,43 +7,23 @@ const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
-
-const connectDB = async()=>{
-  try{
-      const connectioInstance =await mongoose.connect(`mongodb+srv://yuvraj7000raju:999yuvraj7000@insighteye.a43czcr.mongodb.net/my-database`)
-      console.log("mongodb connected")
+const connectDB = async () => {
+  try {
+    await mongoose.connect('mongodb+srv://yuvraj7000raju:999yuvraj7000@insighteye.a43czcr.mongodb.net/my-database', {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log('MongoDB connected');
+  } catch (error) {
+    console.error('MongoDB connection error:', error);
   }
-  catch(error){
-console.log("mongodb connection error",error);
-  }
-}
+};
 connectDB();
-
-
-
-
-
-
-
 
 let server2WebSocket;
 
-
-server2WebSocket = new WebSocket('ws://localhost:3001');
-server2WebSocket.on('open', () => {
-    console.log('Connected to Server 1 from Server 2');
-    server2WebSocket.send('Hello from Server 2');
-  });
-
-  server2WebSocket.on('message', (message) => {
-    const messageStr = message.toString('utf8');
-    console.log(`Message from Server 1: ${messageStr}`);})
-
-
-
-
 function connectToServer1() {
-//   server2WebSocket = new WebSocket('ws://localhost:3001');
+  server2WebSocket = new WebSocket('ws://localhost:3001');
 
   server2WebSocket.on('open', () => {
     console.log('Connected to Server 1 from Server 2');
@@ -95,12 +74,6 @@ wss.on('connection', ws => {
 wss.on('error', (error) => {
   console.error('WebSocket server error:', error);
 });
-
-
-
-
-
-
 
 // Start the HTTP server
 server.listen(3002, () => {

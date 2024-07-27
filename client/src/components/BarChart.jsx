@@ -1,5 +1,7 @@
-import React from "react";
+
 import { TrendingUp } from "lucide-react";
+import { useEffect , useState } from "react";
+
 import {
   Bar,
   BarChart,
@@ -23,7 +25,7 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 
-const chartData = [
+let chartData1 = [
   { month: "January", desktop: 186, mobile: 80 },
   { month: "February", desktop: 305, mobile: 200 },
   { month: "March", desktop: 237, mobile: 120 },
@@ -31,6 +33,15 @@ const chartData = [
   { month: "May", desktop: 209, mobile: 130 },
   { month: "June", desktop: 214, mobile: 140 },
 ];
+
+
+
+
+
+
+
+
+
 
 const chartConfig = {
   desktop: {
@@ -47,7 +58,52 @@ const chartConfig = {
 };
 
 export default function Component() {
+  const [chartData, setchart] = useState(chartData1);
+
+  useEffect(() => {
+    let socket;
+
+    function startConnection() {
+        socket = new WebSocket('ws://localhost:3002');
+
+        socket.addEventListener('open', function (event) {
+            socket.send('Hello from client');
+        });
+
+        socket.addEventListener('message', function (event) {
+            console.log('Message from server ', event.data);
+            setchart(JSON.parse(event.data));
+        });
+
+        socket.addEventListener('close', function (event) {
+            console.log('WebSocket connection closed');
+        });
+    }
+
+    document.getElementById('startButton').addEventListener('click', function () {
+        if (!socket || socket.readyState === WebSocket.CLOSED) {
+            startConnection();
+            console.log('WebSocket connection started');
+        } else {
+            console.log('WebSocket connection is already open');
+        }
+    }); 
+
+    document.getElementById('stopButton').addEventListener('click', function () {
+        if (socket && socket.readyState === WebSocket.OPEN) {
+            socket.close();
+        } else {
+            console.log('WebSocket connection is not open');
+        }
+    });
+  }, [chartData]);
+
+
+
   return (
+    <> 
+       <button id="startButton">Start Connection</button>
+    <button id="stopButton">Stop Connection</button>
     <Card>
       <CardHeader>
         <CardTitle>Water Consumption by months</CardTitle>
@@ -111,5 +167,6 @@ export default function Component() {
         </div>
       </CardFooter>
     </Card>
+    </>
   );
 }

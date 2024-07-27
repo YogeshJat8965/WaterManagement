@@ -47,6 +47,14 @@ export default function Home() {
       <div className="col-span-2">
         <WardBarChart></WardBarChart>
       </div>
+      <div className="border-2">
+        <iframe
+          src="https://yugal1107-classifier-model.hf.space"
+          frameborder="0"
+          width="850"
+          height="450"
+        ></iframe>
+      </div>
     </div>
   );
 }

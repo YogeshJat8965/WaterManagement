@@ -23,11 +23,8 @@
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
     "react-gauge-chart": "^0.5.1",
-<<<<<<< HEAD
     "react-plotly.js": "^2.6.0",
-=======
     "react-router-dom": "^6.25.1",
->>>>>>> 94e254a (About page added)
     "recharts": "^2.12.7",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7"

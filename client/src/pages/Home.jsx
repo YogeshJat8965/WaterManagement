@@ -11,9 +11,7 @@ export default function Home() {
 
   return (
     <div className="p-5 grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4">
-      <div className="shadow-md">
-        <Component> </Component>
-      </div>
+      <Component> </Component>
       <WaterLeakageDashboard />
       <LeakageComponent />
 

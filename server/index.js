@@ -1,12 +1,18 @@
-
-const express = require('express');
-const http = require('http');
-const WebSocket = require('ws');
-const path = require('path');
-const mongoose = require('mongoose');
+// import { House } from './models/house.model.js';
+// const express = require('express');
+// const http = require('http');
+// const WebSocket = require('ws');
+// const path = require('path');
+// const mongoose = require('mongoose');
+import express from 'express';
+import http from 'http';
+import { WebSocketServer, WebSocket } from 'ws';
+import path from 'path';
+import mongoose from 'mongoose';
+import { House } from './models/house.model.js';
 const app = express();
 const server = http.createServer(app);
-const wss = new WebSocket.Server({ server });
+const wss = new WebSocketServer({ server });
 
 
 const connectDB = async()=>{
@@ -97,6 +103,17 @@ wss.on('error', (error) => {
 });
 
 
+app.post('/houses', async (req, res) => {
+  try {
+    const { name } = req.body;
+    console.log(req.body)
+    const newHouse = new House({ name});
+    await newHouse.save();
+    res.status(201).json(newHouse);
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to create house' });
+  }
+});
 
 
 

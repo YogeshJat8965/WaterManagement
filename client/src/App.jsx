@@ -1,9 +1,8 @@
-import { PieCharts} from"./components/ui/PieCharts";
 import "./App.css";
-// import { Component } from "./components/Linegraph";
+import { PieCharts } from "./components/ui/PieCharts";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home";
-// import { PieChart } from "lucide-react";
+import WardBarChart from "./components/ui/WardBarChart";
 
 function App() {
   return (
@@ -11,6 +10,7 @@ function App() {
       <Navbar />
       <Home />
       <PieCharts></PieCharts>
+      <WardBarChart></WardBarChart>
     </>
   );
 }

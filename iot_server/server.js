@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 // const express = require('express');
 // const http = require('http');
@@ -67,6 +68,8 @@
 // });
 // //  
   
+=======
+>>>>>>> Stashed changes
 const express = require('express');
 const http = require('http');
 const WebSocket = require('ws');
@@ -93,6 +96,7 @@ wss.on('connection', (ws) => {
 
   ws.on('message', (message) => {
     console.log(`Received message from client: ${message}`);
+<<<<<<< Updated upstream
     
     // Send random dataset at regular intervals
     const intervalId = setInterval(() => {
@@ -105,6 +109,42 @@ wss.on('connection', (ws) => {
       clearInterval(intervalId);
       console.log('Client disconnected from Server 1');
     });
+=======
+    const houses = Array.from({ length: 20 }, (_, i) => `h${i + 1}`);
+    let previousData = houses.map(house => ({
+      house, 
+      flowRate: 0,
+      consumption: 0,
+      timestamp: new Date().toISOString()
+    }));
+    
+    function generateFlowRate() {
+      return Math.random() < 0.95 ? (Math.random() * 0.5 + 0.5).toFixed(2) : (Math.random() * 3).toFixed(2);
+    }
+    
+    function generateMainArray() {
+      const mainArray = previousData.map(data => {
+        const flowRate = parseFloat(generateFlowRate());
+        const consumption = data.consumption + flowRate * 5; // Assuming 5 seconds interval
+        const timestamp = new Date().toISOString();
+    
+        return {
+          house: data.house,
+          flowRate,
+          consumption: parseFloat(consumption.toFixed(2)),
+          timestamp
+        };
+      });
+    
+      previousData = mainArray;
+      return mainArray;
+    }
+    
+    setInterval(function(){
+        console.log(generateMainArray());
+        ws.send(JSON.stringify(generateMainArray()));
+    }, 1000);
+>>>>>>> Stashed changes
   });
 });
 

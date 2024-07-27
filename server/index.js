@@ -1,3 +1,4 @@
+
 const express = require('express');
 const http = require('http');
 const WebSocket = require('ws');
@@ -5,7 +6,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 const app = express();
 const server = http.createServer(app);
-const wss = new WebSocket.Server({ server });
+const wss = new WebSocketServer({ server });
 
 const connectDB = async () => {
   try {
@@ -74,6 +75,12 @@ wss.on('connection', ws => {
 wss.on('error', (error) => {
   console.error('WebSocket server error:', error);
 });
+
+
+
+
+
+
 
 // Start the HTTP server
 server.listen(3002, () => {

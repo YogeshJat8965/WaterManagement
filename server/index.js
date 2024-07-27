@@ -3,10 +3,29 @@ const express = require('express');
 const http = require('http');
 const WebSocket = require('ws');
 const path = require('path');
-
+const mongoose = require('mongoose');
 const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
+
+
+const connectDB = async()=>{
+  try{
+      const connectioInstance =await mongoose.connect(`mongodb+srv://yuvraj7000raju:999yuvraj7000@insighteye.a43czcr.mongodb.net/my-database`)
+      console.log("mongodb connected")
+  }
+  catch(error){
+console.log("mongodb connection error",error);
+  }
+}
+connectDB();
+
+
+
+
+
+
+
 
 let server2WebSocket;
 
@@ -76,6 +95,12 @@ wss.on('connection', ws => {
 wss.on('error', (error) => {
   console.error('WebSocket server error:', error);
 });
+
+
+
+
+
+
 
 // Start the HTTP server
 server.listen(3002, () => {

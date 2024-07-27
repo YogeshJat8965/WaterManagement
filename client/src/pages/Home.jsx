@@ -4,6 +4,7 @@ import GaugeChart from "react-gauge-chart";
 import { PieCharts } from "../components/ui/PieCharts";
 import LeakageComponent from "@/components/LeakageComponent";
 import WardBarChart from "@/components/ui/WardBarChart";
+import WaterLeakageDashboard from "@/components/WaterLeakageDashboard";
 
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
       <div className="shadow-md">
         <Component> </Component>
       </div>
-
+      <WaterLeakageDashboard />
       <LeakageComponent />
 
       <PieCharts></PieCharts>

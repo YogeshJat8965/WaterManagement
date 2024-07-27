@@ -224,6 +224,15 @@
     "@babel/helper-validator-identifier" "^7.24.7"
     to-fast-properties "^2.0.0"
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+"@esbuild/win32-x64@0.21.5":
+  version "0.21.5"
+  resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.21.5.tgz"
+  integrity sha512-tQd/1efJuzPC6rCFwEvLtci/xNFcTZknmXs98FYDfGE4wP9ClFV98nyKrzJKVPMhdDnjzLhdUyMX4PsQAPjwIw==
+=======
+>>>>>>> Stashed changes
 "@choojs/findup@^0.2.0":
   version "0.2.1"
   resolved "https://registry.npmjs.org/@choojs/findup/-/findup-0.2.1.tgz"
@@ -235,6 +244,10 @@
   version "0.21.5"
   resolved "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.21.5.tgz"
   integrity sha512-1rYdTpyv03iycF1+BhzrzQJCdOuAOtaqHTWJZCWvijKD2N5Xu0TtVC8/+1faWqcP9iBCWOmjmhoH94dH82BxPQ==
+<<<<<<< Updated upstream
+=======
+>>>>>>> 5ecefbc253957e6626cc39663f0aa8b188ba1fe1
+>>>>>>> Stashed changes
 
 "@eslint-community/eslint-utils@^4.2.0":
   version "4.4.0"
@@ -492,6 +505,15 @@
   dependencies:
     "@radix-ui/react-compose-refs" "1.1.0"
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+"@rollup/rollup-win32-x64-msvc@4.19.0":
+  version "4.19.0"
+  resolved "https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.19.0.tgz"
+  integrity sha512-xNo5fV5ycvCCKqiZcpB65VMR11NJB+StnxHz20jdqRAktfdfzhgjTiJ2doTDQE/7dqGaV5I7ZGqKpgph6lCIag==
+=======
+>>>>>>> Stashed changes
 "@rollup/rollup-linux-x64-gnu@4.19.0":
   version "4.19.0"
   resolved "https://registry.npmjs.org/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.19.0.tgz"
@@ -537,6 +559,10 @@
   integrity sha512-RrArvtsV0vdsCBegoBtOalgdSOfkBrTJ07VkpiCnq/491W67hnMWmDu7e6Ztw0C3WldRYTXkg3SumfdzZxLBHA==
   dependencies:
     "@turf/helpers" "^6.5.0"
+<<<<<<< Updated upstream
+=======
+>>>>>>> 5ecefbc253957e6626cc39663f0aa8b188ba1fe1
+>>>>>>> Stashed changes
 
 "@types/babel__core@^7.20.5":
   version "7.20.5"
@@ -1055,6 +1081,11 @@ clsx@^2.0.0, clsx@^2.1.1:
   version "2.1.1"
   resolved "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz"
   integrity sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 
 clsx@2.0.0:
   version "2.0.0"
@@ -1067,6 +1098,15 @@ color-alpha@^1.0.4, color-alpha@1.0.4:
   integrity sha512-lr8/t5NPozTSqli+duAN+x+no/2WaKTeWvxhHGN+aXT6AJ8vPlzLa7UriyjWak0pSC2jHol9JgjBYnnHsGha9A==
   dependencies:
     color-parse "^1.3.8"
+<<<<<<< Updated upstream
+=======
+>>>>>>> 5ecefbc253957e6626cc39663f0aa8b188ba1fe1
+
+clsx@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/clsx/-/clsx-2.0.0.tgz"
+  integrity sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==
+>>>>>>> Stashed changes
 
 color-convert@^1.9.0:
   version "1.9.3"
@@ -1082,6 +1122,11 @@ color-convert@^2.0.1:
   dependencies:
     color-name "~1.1.4"
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 color-id@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/color-id/-/color-id-1.1.0.tgz"
@@ -1094,11 +1139,21 @@ color-name@^1.0.0, color-name@1.1.3:
   resolved "https://registry.npmjs.org/color-name/-/color-name-1.1.3.tgz"
   integrity sha512-72fSenhMw2HZMTVHeCA9KCmpEIbzWiQsjN+BHcBbS9vr1mtt+vJjPdksIBNUmKAW8TFUDPJK5SUU3QhE9NEXDw==
 
+>>>>>>> 5ecefbc253957e6626cc39663f0aa8b188ba1fe1
 color-name@~1.1.4:
   version "1.1.4"
   resolved "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+color-name@1.1.3:
+  version "1.1.3"
+  resolved "https://registry.npmjs.org/color-name/-/color-name-1.1.3.tgz"
+  integrity sha512-72fSenhMw2HZMTVHeCA9KCmpEIbzWiQsjN+BHcBbS9vr1mtt+vJjPdksIBNUmKAW8TFUDPJK5SUU3QhE9NEXDw==
+=======
+>>>>>>> Stashed changes
 color-normalize@^1.5.0, color-normalize@1.5.0:
   version "1.5.0"
   resolved "https://registry.npmjs.org/color-normalize/-/color-normalize-1.5.0.tgz"
@@ -1143,17 +1198,30 @@ commander@^2.15.1:
   version "2.20.3"
   resolved "https://registry.npmjs.org/commander/-/commander-2.20.3.tgz"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
+<<<<<<< Updated upstream
+=======
+>>>>>>> 5ecefbc253957e6626cc39663f0aa8b188ba1fe1
+>>>>>>> Stashed changes
 
 commander@^4.0.0:
   version "4.1.1"
   resolved "https://registry.npmjs.org/commander/-/commander-4.1.1.tgz"
   integrity sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 commander@2:
   version "2.20.3"
   resolved "https://registry.npmjs.org/commander/-/commander-2.20.3.tgz"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> 5ecefbc253957e6626cc39663f0aa8b188ba1fe1
+>>>>>>> Stashed changes
 commander@7:
   version "7.2.0"
   resolved "https://registry.npmjs.org/commander/-/commander-7.2.0.tgz"
@@ -1258,6 +1326,11 @@ csstype@^3.0.2:
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.3.tgz"
   integrity sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 d@^1.0.1, d@^1.0.2, d@1:
   version "1.0.2"
   resolved "https://registry.npmjs.org/d/-/d-1.0.2.tgz"
@@ -1271,6 +1344,10 @@ d3-array@^1.2.1:
   resolved "https://registry.npmjs.org/d3-array/-/d3-array-1.2.4.tgz"
   integrity sha512-KHW6M86R+FUPYGb3R5XiYjXPq7VzwxZ22buHhAEVG5ztoEcZZMLov530mmccaqA1GghZArjQV46fuc8kUqhhHw==
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> 5ecefbc253957e6626cc39663f0aa8b188ba1fe1
+>>>>>>> Stashed changes
 d3-array@^3.1.6, d3-array@^3.2.0, "d3-array@2 - 3", "d3-array@2.10.0 - 3", "d3-array@2.5.0 - 3", d3-array@3:
   version "3.2.4"
   resolved "https://registry.npmjs.org/d3-array/-/d3-array-3.2.4.tgz"
@@ -1500,6 +1577,11 @@ d3-scale@^4.0.2, d3-scale@4:
   resolved "https://registry.npmjs.org/d3-selection/-/d3-selection-3.0.0.tgz"
   integrity sha512-fmTRWbNMmsmWq6xJV8D19U/gw/bwrHfNXxrIN+HfZgnzqTHp9jOmKMhsTUjXOJnZOdZY9Q28y4yebKzqDKlxlQ==
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 d3-shape@^1.2.0:
   version "1.3.7"
   resolved "https://registry.npmjs.org/d3-shape/-/d3-shape-1.3.7.tgz"
@@ -1507,6 +1589,10 @@ d3-shape@^1.2.0:
   dependencies:
     d3-path "1"
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> 5ecefbc253957e6626cc39663f0aa8b188ba1fe1
+>>>>>>> Stashed changes
 d3-shape@^3.1.0, d3-shape@3:
   version "3.2.0"
   resolved "https://registry.npmjs.org/d3-shape/-/d3-shape-3.2.0.tgz"
@@ -1528,11 +1614,20 @@ d3-time-format@^2.2.3:
   dependencies:
     d3-time "1 - 3"
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 d3-time@^1.1.0, d3-time@1:
   version "1.1.0"
   resolved "https://registry.npmjs.org/d3-time/-/d3-time-1.1.0.tgz"
   integrity sha512-Xh0isrZ5rPYYdqhAVk8VLnMEidhz5aP7htAADH6MfzgmmicPkTo8LhkLxci61/lCB7n7UmE3bN0leRt+qvkLxA==
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> 5ecefbc253957e6626cc39663f0aa8b188ba1fe1
+>>>>>>> Stashed changes
 d3-time@^3.0.0, "d3-time@1 - 3", "d3-time@2.1.1 - 3", d3-time@3:
   version "3.1.0"
   resolved "https://registry.npmjs.org/d3-time/-/d3-time-3.1.0.tgz"
@@ -2385,6 +2480,11 @@ get-symbol-description@^1.0.2:
     es-errors "^1.3.0"
     get-intrinsic "^1.2.4"
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 gl-mat4@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/gl-mat4/-/gl-mat4-1.2.0.tgz"
@@ -2431,6 +2531,10 @@ gl-util@^3.1.2:
     pick-by-alias "^1.2.0"
     weak-map "^1.0.5"
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> 5ecefbc253957e6626cc39663f0aa8b188ba1fe1
+>>>>>>> Stashed changes
 glob-parent@^5.1.2:
   version "5.1.2"
   resolved "https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz"
@@ -3808,7 +3912,15 @@ react-transition-group@^4.4.5:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
+<<<<<<< Updated upstream
 "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react@^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.2 || ^17.0 || ^18.x", react@^18.3.1, react@>=16.6.0, react@>0.13.0:
+=======
+<<<<<<< HEAD
+"react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react@^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.2 || ^17.0 || ^18.x", react@^18.3.1, react@>=16.6.0:
+=======
+"react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react@^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.2 || ^17.0 || ^18.x", react@^18.3.1, react@>=16.6.0, react@>0.13.0:
+>>>>>>> 5ecefbc253957e6626cc39663f0aa8b188ba1fe1
+>>>>>>> Stashed changes
   version "18.3.1"
   resolved "https://registry.npmjs.org/react/-/react-18.3.1.tgz"
   integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
@@ -3976,6 +4088,11 @@ resolve-from@^4.0.0:
   resolved "https://registry.npmjs.org/resolve-from/-/resolve-from-4.0.0.tgz"
   integrity sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 resolve-protobuf-schema@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/resolve-protobuf-schema/-/resolve-protobuf-schema-2.1.0.tgz"
@@ -4015,6 +4132,10 @@ resolve@^1.1.5:
     path-parse "^1.0.7"
     supports-preserve-symlinks-flag "^1.0.0"
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> 5ecefbc253957e6626cc39663f0aa8b188ba1fe1
+>>>>>>> Stashed changes
 resolve@^1.1.7:
   version "1.22.8"
   resolved "https://registry.npmjs.org/resolve/-/resolve-1.22.8.tgz"

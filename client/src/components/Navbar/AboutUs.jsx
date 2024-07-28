@@ -3,11 +3,11 @@ import React from "react";
 const AboutUs = () => {
   return (
     <div className=" absolute top-16 w-full bg-gray-100 p-8">
-      <h1 className="text-5xl font-extrabold mb-8 text-center animate-fade-in">
+      <h1 className="text-5xl text-blue-500 font-semibold mb-8 text-center animate-fade-in">
         About Us
       </h1>
 
-      <div className="mb-8 p-6 bg-white shadow-sm rounded-lg animate-slide-up">
+      <div className="mb-8 p-6 shadow-sm bg-blue-100 rounded-lg animate-slide-up">
         <p className="text-xl mb-4">
           This page is designed to help you learn more about our company and
           what we do. We are a team of passionate individuals who are committed
@@ -15,23 +15,6 @@ const AboutUs = () => {
           services.
         </p>
       </div>
-      {/* 
-      <div className="col-span-1 md:col-span-2 flex justify-center mb-8 gap-20 mt-5">
-        <div >
-        <img src="https://media.istockphoto.com/id/1468125168/photo/rajwada-palace.jpg?b=1&s=612x612&w=0&k=20&c=ePO3DAImuzemE2fWe_9BCDFhO8d-B5MV9qYoMBays18=" alt="Rajwada Palace" className="w-96 h-96 rounded-lg shadow-sm animate-fade-in" />
-        
-
-        </div>
-        <div >
-        <img src="https://media.istockphoto.com/id/539001564/photo/rajwada-palace-indore.webp?s=2048x2048&w=is&k=20&c=fu6-uMqvp_0X8XPqjZaHIdJZFsJMf3Po7Hm8Ln3WheI=" alt="Rajwada Palace" className="w-96 h-96 rounded-lg shadow-sm animate-fade-in" />
-        
-
-        </div>
-
-        <div >
-          <img src="https://media.istockphoto.com/id/515708494/photo/mahatma-gandhi-hall.jpg?s=2048x2048&w=is&k=20&c=3QsjUazEtQ8gX3fkB7ZIGjBeYRY-3GRsK9UMg86AM4I=" alt="Sarafa Bazar" className="w-96 h-96 rounded-lg shadow-sm animate-fade-in" />
-        </div>
-        </div> */}
 
       <div className="flex justify-center mb-8"></div>
 

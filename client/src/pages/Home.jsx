@@ -19,7 +19,7 @@ export default function Home() {
             {" "}
             Gain Insights with Monthly Consumption Analysis{" "}
           </h1>
-          <div className="p-5">
+          <div className="p-5 pr-10 text-lg">
             This bar chart provides a detailed analysis of the monthly water
             consumption across the entire city. By visualizing the total water
             usage for each month, it highlights patterns and trends in water

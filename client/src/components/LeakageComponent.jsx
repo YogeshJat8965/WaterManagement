@@ -1,8 +1,9 @@
+import { Separator } from "@radix-ui/react-separator";
 import React from "react";
 
 export default function LeakageComponent() {
   return (
-    <div className="rounded-md border shadow-md flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center">
       <h1 className="text-3xl mt-2 mx-2 p-1 font-semibold flex items-center gap-4">
         <span className="text-5xl font-extrabold text-red-500">4</span>{" "}
         Potential issues found{" "}
@@ -15,15 +16,15 @@ export default function LeakageComponent() {
         </div>
         <div className="bg-blue-100 rounded-lg p-2 m-2">
           Leakage Found in{" "}
-          <span className="font-bold text-blue-500">Gugriakhedi</span>
+          <span className="font-bold text-blue-500">Musakhedi</span>
         </div>
         <div className="bg-blue-100 rounded-lg p-2 m-2">
           Leakage Found in{" "}
-          <span className="font-bold text-blue-500">Balaghat</span>
+          <span className="font-bold text-blue-500">Palasia</span>
         </div>
         <div className="bg-blue-100 rounded-lg p-2 m-2">
           Leakage Found in{" "}
-          <span className="font-bold text-blue-500">Dhatia </span>
+          <span className="font-bold text-blue-500">Bengali Square</span>
         </div>
       </div>
     </div>

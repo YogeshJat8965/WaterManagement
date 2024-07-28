@@ -1,12 +1,5 @@
-<<<<<<< Updated upstream
-
-=======
 import React from "react";
-import WebSocketButton from "./ui/websocetbtn";
->>>>>>> Stashed changes
 import { TrendingUp } from "lucide-react";
-import { useEffect , useState } from "react";
-
 import {
   Bar,
   BarChart,
@@ -30,31 +23,23 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 
-let chartData1 = [
-  { month: "January", desktop: 186, mobile: 80 },
-  { month: "February", desktop: 305, mobile: 200 },
-  { month: "March", desktop: 237, mobile: 120 },
-  { month: "April", desktop: 73, mobile: 190 },
-  { month: "May", desktop: 209, mobile: 130 },
-  { month: "June", desktop: 214, mobile: 140 },
+const chartData = [
+  { month: "January", consumption: 10080, mobile: 10080 },
+  { month: "February", consumption: 10200, mobile: 10200 },
+  { month: "March", consumption: 11120, mobile: 11120 },
+  { month: "April", consumption: 12190, mobile: 12190 },
+  { month: "May", consumption: 14890, mobile: 13890 },
+  { month: "June", consumption: 13140, mobile: 13140 },
+  { month: "July", consumption: 12140, mobile: 12140 },
 ];
 
-
-
-
-
-
-
-
-
-
 const chartConfig = {
-  desktop: {
-    label: "Desktop",
+  consumption: {
+    label: "consumption",
     color: "hsl(var(--chart-1))",
   },
   mobile: {
-    label: "Mobile",
+    label: "Consumption(in million)",
     color: "hsl(var(--chart-2))",
   },
   label: {
@@ -63,60 +48,10 @@ const chartConfig = {
 };
 
 export default function Component() {
-<<<<<<< Updated upstream
-  const [chartData, setchart] = useState(chartData1);
-
-  useEffect(() => {
-    let socket;
-
-    function startConnection() {
-        socket = new WebSocket('ws://localhost:3002');
-
-        socket.addEventListener('open', function (event) {
-            socket.send('Hello from client');
-        });
-
-        socket.addEventListener('message', function (event) {
-            console.log('Message from server ', event.data);
-            setchart(JSON.parse(event.data));
-        });
-
-        socket.addEventListener('close', function (event) {
-            console.log('WebSocket connection closed');
-        });
-    }
-
-    document.getElementById('startButton').addEventListener('click', function () {
-        if (!socket || socket.readyState === WebSocket.CLOSED) {
-            startConnection();
-            console.log('WebSocket connection started');
-        } else {
-            console.log('WebSocket connection is already open');
-        }
-    }); 
-
-    document.getElementById('stopButton').addEventListener('click', function () {
-        if (socket && socket.readyState === WebSocket.OPEN) {
-            socket.close();
-        } else {
-            console.log('WebSocket connection is not open');
-        }
-    });
-  }, [chartData]);
-
-
-
   return (
-    <> 
-       <button id="startButton">Start Connection</button>
-    <button id="stopButton">Stop Connection</button>
-=======
-  return (<>
-  <WebSocketButton></WebSocketButton>
->>>>>>> Stashed changes
     <Card>
       <CardHeader>
-        <CardTitle>Water Consumption by months</CardTitle>
+        <CardTitle>Water Consumption by Month</CardTitle>
         <CardDescription>January - June 2024</CardDescription>
       </CardHeader>
       <CardContent>
@@ -139,15 +74,15 @@ export default function Component() {
               tickFormatter={(value) => value.slice(0, 3)}
               hide
             />
-            <XAxis dataKey="desktop" type="number" hide />
+            <XAxis dataKey="consumption" type="number" hide />
             <ChartTooltip
               cursor={false}
               content={<ChartTooltipContent indicator="line" />}
             />
             <Bar
-              dataKey="desktop"
+              dataKey="consumption"
               layout="vertical"
-              fill="var(--color-desktop)"
+              fill="var(--color-consumption)"
               radius={4}
             >
               <LabelList
@@ -158,7 +93,7 @@ export default function Component() {
                 fontSize={12}
               />
               <LabelList
-                dataKey="desktop"
+                dataKey="consumption"
                 position="right"
                 offset={8}
                 className="fill-foreground"
@@ -170,17 +105,13 @@ export default function Component() {
       </CardContent>
       <CardFooter className="flex-col items-start gap-2 text-sm">
         <div className="flex gap-2 font-medium leading-none">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+          Showing Monthly Water Consumption in MLD{" "}
+          <TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
-          Showing total visitors for the last 6 months
+          Showing consumption for the last 6 months
         </div>
       </CardFooter>
-<<<<<<< Updated upstream
     </Card>
-    </>
-=======
-    </Card></>
->>>>>>> Stashed changes
   );
 }

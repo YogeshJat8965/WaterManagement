@@ -3,9 +3,9 @@ import GaugeChart from "react-gauge-chart";
 import { PieCharts } from "../components/ui/PieCharts";
 import LeakageComponent from "@/components/LeakageComponent";
 import WardBarChart from "@/components/ui/WardBarChart";
-import WaterLeakageDashboard from "@/components/WaterLeakageDashboard";
 import { Separator } from "@/components/ui/separator";
 import { SimpleFooter } from "@/components/Footer";
+import WaterLeakageDashboard from "@/components/dummy/WaterLeakageDashboard";
 
 export default function Home() {
   return (
@@ -65,7 +65,10 @@ export default function Home() {
       <div className="">
         <WardBarChart></WardBarChart>
       </div>
-      <SimpleFooter />
+      <div className="h-10">
+        <WaterLeakageDashboard />
+      </div>
+      {/* <SimpleFooter /> */}
     </div>
   );
 }

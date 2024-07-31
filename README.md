@@ -23,15 +23,15 @@ This project aims to enhance water supply management in Indore by installing sma
     
 
 2. *Install dependencies and run frontend*:
-    bash
+    bash ```
     cd client
     npm install
     npm run dev
-    
+    ```
 
 
 
-3. *Run the backend API*:
+4. *Run the backend API*:
     bash
     cd backend
     npm install

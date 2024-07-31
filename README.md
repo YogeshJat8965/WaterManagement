@@ -17,13 +17,14 @@ This project aims to enhance water supply management in Indore by installing sma
 ## Installation
 
 1. *Clone the repository*:
+    ```
     bash
     git clone https://github.com/YogeshJat8965/WaterManagement.git
     cd WaterManagement 
-    
+    ```
 
 2. *Install dependencies and run frontend*:
-    bash ```
+    ```
     cd client
     npm install
     npm run dev
@@ -32,10 +33,11 @@ This project aims to enhance water supply management in Indore by installing sma
 
 
 4. *Run the backend API*:
-    bash
+    ```
     cd backend
     npm install
     npm run start
+    ```
     
 
 ## Usage
@@ -47,4 +49,18 @@ This project aims to enhance water supply management in Indore by installing sma
 ## Acknowledgments
 
 - Thanks to the Indore municipal corporation for their support and collaboration.
-- Inspired by various open-source water management projects.
+- Inspired by various open-source water management projects.
+
+## Include Credits 
+
+- [Tejaswa Jhode]()  [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=GitHub&logoColor=white)](https://github.com/tejjhode)     [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/tejaswa-jhode-669362163/)
+
+
+- [Pratham Sharma]() [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=GitHub&logoColor=white)](https://github.com/PrathamSharma169)    [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/pratham-sharma-9a5307251/)
+
+- [Yugal Burde]() [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=GitHub&logoColor=white)](https://github.com/yugal1107)    [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/yugal-burde-58012a256/)
+
+- [Yogesh Jat]() [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=GitHub&logoColor=white)](https://github.com/YogeshJat8965)    [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/yogesh-jat-94590728b/)
+
+- [Yuvraj Yadav]() [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=GitHub&logoColor=white)](https://github.com/yuvraj7000raju)    [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/yuvraj-yadav-1b7984259/)
+
